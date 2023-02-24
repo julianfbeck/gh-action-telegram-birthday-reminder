@@ -1,0 +1,12 @@
+timezone: Europe/Berlin
+birthdays:
+  - name: Example User
+    date: 1980-02-26
+  - name: Example User 2
+    date: 1980-02-24
+  - name: Example User
+    date: 02-26
+  - name: Example User 2
+    date: 02-24
+  - name: Example User 5
+    date: 1980-02-28

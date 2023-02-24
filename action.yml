@@ -1,0 +1,23 @@
+name: 'telegram-birthday-reminder'
+description: 'Provide a description here'
+author: 'Julian Beck'
+inputs:
+  birthday_file:
+    required: false
+    description: 'input description here'
+    default: './birthday.yml'
+  first_reminder:
+    required: false
+    description: 'first reminder in days before birthday'
+  second_reminder:
+    required: false
+    description: 'second reminder in days before birthday'
+  bot_token:
+    required: true
+    description: 'Telegram bot token'
+  chat_id:
+    required: true
+    description: 'Telegram chat id'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
