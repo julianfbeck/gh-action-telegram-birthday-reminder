@@ -1,6 +1,9 @@
 name: 'telegram-birthday-reminder'
 description: 'A Github Actions that runs every day and reminds you of peoples birthdays using telegram'
 author: 'Julian Beck'
+branding:
+  icon: 'calendar'
+  color: 'green'
 inputs:
   birthday_file:
     required: false
