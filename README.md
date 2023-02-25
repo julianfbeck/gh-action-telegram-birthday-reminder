@@ -52,3 +52,25 @@ You can also configure the `first_reminder` and `second_reminder` to change the 
 first_reminder: 2 # remind me 2 days before birthday
 second_reminder: 4 # remind me 4 days before birthday
 ```
+### Example Workflow
+
+(just use the template repository)
+
+```yaml
+name: 'cron-job'
+on: #run every day
+  schedule:
+    - cron: '0 8 * * *' # 8am UTC is 9am CET
+
+jobs:
+  birthday-reminder: # make sure the action works on a clean machine without building
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./
+        with:
+          bot_token: ${{ secrets.BOT_TOKEN }}
+          chat_id: ${{ secrets.CHAT_ID }}
+          first_reminder: 2 # remind me 2 days before birthday
+          second_reminder: 4 # remind me 4 days before birthday
+```
