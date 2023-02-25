@@ -1,5 +1,5 @@
 name: 'telegram-birthday-reminder'
-description: 'Provide a description here'
+description: 'A Github Actions that runs every day and reminds you of peoples birthdays using telegram'
 author: 'Julian Beck'
 inputs:
   birthday_file:
