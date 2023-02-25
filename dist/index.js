@@ -82,16 +82,16 @@ function run() {
                 for (const reminder of reminders) {
                     //check if date is today
                     if ((0, time_1.isToday)((0, dayjs_1.default)(reminder.date).toDate())) {
-                        let message = `Today is ${reminder.name}'s birthday!`;
+                        let message = `Today is ${reminder.name}'s birthday!\n`;
                         //calculate age if year is not missing
                         if (reminder.originalYear) {
                             //calculate age
                             const age = new Date().getFullYear() - parseInt(reminder.originalYear);
-                            message += ` They are ${age} years old.`;
+                            message += ` They are ${age} years old.\n`;
                         }
                         //add date if it exists
                         if (reminder.date) {
-                            message += ` ${reminder.date}`;
+                            message += ` ${reminder.date}\n`;
                         }
                         if (reminder.info) {
                             message += ` ${reminder.info}`;
@@ -101,7 +101,8 @@ function run() {
                     else {
                         //reminder is in the future
                         const daysUntilBirthday = (0, dayjs_1.default)(reminder.date).diff((0, dayjs_1.default)(), 'day');
-                        let message = `Reminder: ${reminder.name}'s birthday is in ${daysUntilBirthday} days.`;
+                        let message = `Reminder: ${reminder.name}'s birthday is in ${daysUntilBirthday} days.\n`;
+                        message += ` ${reminder.date}`;
                         if (reminder.info) {
                             message += ` ${reminder.info}`;
                         }
