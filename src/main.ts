@@ -23,7 +23,6 @@ async function run(): Promise<void> {
       core.setFailed('birthday_file is empty')
       return
     }
-    await sendMessage(botToken, chatId, 'Hello world!')
     //output the contents of the file
     if (process.env.GITHUB_WORKSPACE) {
       const birthdayFile = await fs.readFile(

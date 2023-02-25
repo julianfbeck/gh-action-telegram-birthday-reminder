@@ -67,10 +67,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
+      - name: telegram-birthday-reminder
+        uses: julianfbeck/gh-action-telegram-birthday-reminder@v1.2
         with:
           bot_token: ${{ secrets.BOT_TOKEN }}
           chat_id: ${{ secrets.CHAT_ID }}
           first_reminder: 2 # remind me 2 days before birthday
           second_reminder: 4 # remind me 4 days before birthday
+
 ```

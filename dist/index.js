@@ -63,7 +63,6 @@ function run() {
                 core.setFailed('birthday_file is empty');
                 return;
             }
-            yield sendMessage(botToken, chatId, 'Hello world!');
             //output the contents of the file
             if (process.env.GITHUB_WORKSPACE) {
                 const birthdayFile = yield fs.readFile(path_1.default.join(process.env.GITHUB_WORKSPACE, birthdayFilePath), 'utf8');
