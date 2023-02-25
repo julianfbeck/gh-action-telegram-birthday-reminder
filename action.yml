@@ -4,7 +4,7 @@ author: 'Julian Beck'
 inputs:
   birthday_file:
     required: false
-    description: 'input description here'
+    description: 'path to the birthday.yml file'
     default: './birthday.yml'
   first_reminder:
     required: false
