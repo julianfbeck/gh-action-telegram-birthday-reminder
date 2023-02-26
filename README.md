@@ -5,7 +5,7 @@ Inspired by this [this](https://twitter.com/levelsio/status/1518506440939683840)
 ![Image of Tweet](doc/image.png)
 ## Setup Actions
 
-To Setup the Action simply copy the Template Repository from [here]()
+To Setup the Action simply copy the Template Repository from [here](https://github.com/julianfbeck/gh-action-telegram-birthday-reminder-template)
 
 *Make sure the repository is private, you don't want to share your all your birthdays with the world*
 
